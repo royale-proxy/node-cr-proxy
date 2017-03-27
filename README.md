@@ -28,6 +28,18 @@ Don't like NodeJs, prefer python? Get the [python proxy](https://github.com/roya
 #### iPhone
   * We do not have a patcher at this time.
 
+#### Running the proxy
+
+  `node index`
+
+  `node index --verbose` will display the contents of the messages on the screen as well as show debug info when messages are missing/incomplete
+  
+  `node index --dump ./packets` will save decrypted packets into the packets folder with a format of messageId.bin (ex: 10101.bin) -- Make sure the folder exists.
+  
+  `node index --replay ./packets/10101.bin` will decode the 10101 packet using definitions, useful when trying to decode a new message
+  
+  `node index --help` will show you the command line help
+  
 ## What's the status?
 
 This is a work in progress, but the proxy is pretty much complete. We do need help defining the network messages, so head over to [cr-messages](https://github.com/royale-proxy/cr-messages), clone and contribute!
