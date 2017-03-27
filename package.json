@@ -1,0 +1,29 @@
+{
+  "name": "node-cr-proxy",
+  "version": "1.0.0",
+  "description": "Clash Royale Proxy",
+  "homepage": "https://github.com/royale-proxy/node-cr-proxy",
+  "bugs": {
+    "url": "https://github.com/royale-proxy/issues"
+  },
+  "main": "index.js",
+  "author": "Steve Rabouin",
+  "license": "GNU GPLv3",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/royaletools/node-cr-proxy.git"
+  },
+  "engines": {
+    "node": ">=6.8.0"
+  },
+  "dependencies": {
+    "blake2": "^1.4.0",
+    "bytebuffer": "^5.0.1",
+    "command-line-args": "^4.0.2",
+    "command-line-usage": "^4.0.0",
+    "console-stamp": "^0.2.5",
+    "cr-messages": "royale-proxy/cr-messages",
+    "jsome": "^2.3.26",
+    "tweetnacl": "^0.14.5"
+  }
+}
