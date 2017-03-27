@@ -14,7 +14,7 @@ Don't like NodeJs, prefer python? Get the [python proxy](https://github.com/roya
 
 #### Clone the code
 
-* On Windows, first install Python 2.7.13 so that node-gyp works.
+* On Windows, first install [Python 2.7.13](https://www.python.org/downloads/release/python-2713/) so that node-gyp works.
 
 `git clone https://github.com/royale-proxy/node-cr-proxy && cd node-cr-proxy`
 
