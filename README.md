@@ -1,5 +1,6 @@
 # node-cr-proxy
-![clash royale](https://img.shields.io/badge/Clash%20Royale-1.8.1-blue.svg?style=plastic")
+[![clash royale](https://img.shields.io/badge/Clash%20Royale-1.8.1-brightgreen.svg?style=flat")](https://play.google.com/store/apps/details?id=com.supercell.clashroyale&hl=en)
+[![licence](https://img.shields.io/aur/license/yaourt.svg?style=flat)](https://github.com/royale-proxy/node-cr-proxy/blob/master/LICENSE)
 
 Clash Royale Proxy - Intercepts the traffic between your Clash Royale App and their servers, decrypts the protocol and decodes the messages.
 
