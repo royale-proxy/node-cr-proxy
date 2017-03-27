@@ -14,12 +14,14 @@ Don't like NodeJs, prefer python? Get the [python proxy](https://github.com/roya
 
 #### Clone the code
 
-  `git clone https://github.com/royale-proxy/node-cr-proxy && cd node-cr-proxy`
+* On Windows, first install Python 2.7.13 so that node-gyp works.
 
-  `npm install`
+`git clone https://github.com/royale-proxy/node-cr-proxy && cd node-cr-proxy`
 
-  `cp settings.json.example settings.json` / `copy settings.json.example settings.json`
+`npm install`
 
+`cp settings.json.example settings.json` / `copy settings.json.example settings.json`
+  
 ### Setting up your device
 
 #### Android
