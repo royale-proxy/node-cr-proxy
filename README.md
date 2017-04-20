@@ -27,9 +27,7 @@ Options:
 - `--help` will show you the command line help
 - `--verbose`will display the contents of the messages on the screen as well as show debug info when messages are missing/incomplete
 - `--dump ./packets` will save decrypted packets into the packets folder with a format of messageId.bin (ex: 10101.bin) -- Make sure the folder exists
--   `--replay ./packets/10101.bin` will decode the `10101` packet using definitions, useful when trying to decode a new message
-- 
-  
+- `--replay ./packets/10101.bin` will decode the `10101` packet using definitions, useful when trying to decode a new message
 
 ## What's the status?
 
