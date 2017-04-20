@@ -1,20 +1,23 @@
 {
   "name": "node-cr-proxy",
   "version": "1.0.0",
-  "description": "Clash Royale Proxy",
+  "description": "A simple Clash Royale proxy, implementing the new encryption, built on top of Node",
   "homepage": "https://github.com/royale-proxy/node-cr-proxy",
   "bugs": {
     "url": "https://github.com/royale-proxy/issues"
   },
+  "scripts": {
+    "start": "node index.js"
+  },
   "main": "index.js",
   "author": "Steve Rabouin",
-  "license": "GNU GPLv3",
+  "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/royaletools/node-cr-proxy.git"
+    "url": "https://github.com/royale-proxy/node-cr-proxy.git"
   },
   "engines": {
-    "node": ">=6.8.0"
+    "node": ">=7.0.0"
   },
   "dependencies": {
     "blake2": "^1.4.0",

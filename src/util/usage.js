@@ -1,8 +1,8 @@
 'use strict';
 
-var commandLineArgs = require('command-line-args');
-var getUsage = require('command-line-usage');
-var fs = require('fs');
+const commandLineArgs = require('command-line-args');
+const getUsage = require('command-line-usage');
+const fs = require('fs');
 
 function FileDetails(filename){
     if (!(this instanceof FileDetails)) return new FileDetails(filename);
@@ -10,7 +10,7 @@ function FileDetails(filename){
     this.exists = fs.existsSync(filename);
 }
 
-var optionDefinitions = [
+let optionDefinitions = [
     {
         name: 'verbose',
         alias: 'v',
@@ -71,8 +71,8 @@ var sections = [
     }
 ];
 
-var options = commandLineArgs(optionDefinitions);
-var usage = getUsage(sections);
+let options = commandLineArgs(optionDefinitions);
+let usage = getUsage(sections);
 
 if(options.help) {
     console.log(usage);
