@@ -5,6 +5,8 @@ var fs = require('fs');
 var util = require('util');
 var path = require('path');
 var jsome = require('jsome');
+var colors = require('colors');
+var jsbytes = require('jsbytes');
 var options = require('./util/usage').options;
 var settings = require('./settings.json');
 
@@ -39,7 +41,7 @@ if(options.replay) {
 
     server.on('error', function(err) {
         if (err.code == 'EADDRINUSE') {
-            console.log('Address in use, exiting...');
+            console.log('Address in use, exiting...'.red);
         } else {
             console.log('Unknown error setting up proxy: ' + err);
         }
@@ -48,7 +50,7 @@ if(options.replay) {
     });
 
     server.on('listening', function() {
-        console.log('listening on ' + server.address().address + ':' + server.address().port);
+        console.log(('listening on ' + server.address().address + ':' + server.address().port).green);
     });
 
     server.on('connection', function(socket) {
@@ -65,7 +67,7 @@ if(options.replay) {
         clientCrypto.setServer(serverCrypto);
         serverCrypto.setClient(clientCrypto);
 
-        console.log('new client ' + socket.key + ' connected, establishing connection to game server');
+        console.log('new client ' + socket.key + ' connected, establishing connection to game server...'.green);
 
         gameserver.connect(9339, "game.clashroyaleapp.com", function() {
             console.log('Connected to game server on ' + gameserver.remoteAddress + ':' + gameserver.remotePort);
