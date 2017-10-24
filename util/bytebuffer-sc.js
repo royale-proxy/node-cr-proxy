@@ -68,7 +68,7 @@ ByteBuffer.prototype.readRrsInt32 = function(offset) {
  * @returns {!ByteBuffer|number} this if `offset` is omitted, else the actual number of bytes written
  * @expose
  */
-ByteBuffer.prototype.writeRrsInt32 = function(value, offset) {
+/*ByteBuffer.prototype.writeRrsInt32 = function(value, offset) {
     var relative = typeof offset === 'undefined';
     if (relative) offset = this.offset;
     if (!this.noAssert) {
@@ -114,6 +114,11 @@ ByteBuffer.prototype.writeRrsInt32 = function(value, offset) {
     }
     return size;
 };
+*/
+ByteBuffer.prototype.writeRrsInt32 = () => {
+    process.emitWarning("writeRrsInt32 is depreciated.");
+    return Error("writeRrsInt32 is depreciated.");
+}
 
 /**
  * Reads a length as uint32 prefixed UTF8 encoded string. Supercell also has FF FF FF FF for len when string is empty so
