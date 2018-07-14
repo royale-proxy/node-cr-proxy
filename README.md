@@ -1,5 +1,5 @@
 # node-cr-proxy
-[![clash royale](https://img.shields.io/badge/Clash%20Royale-1.9.2-brightgreen.svg?style=flat")](https://play.google.com/store/apps/details?id=com.supercell.clashroyale&hl=en)
+[![clash royale](https://img.shields.io/badge/Clash%20Royale-1.9.2-brightred.svg?style=flat")](https://play.google.com/store/apps/details?id=com.supercell.clashroyale&hl=en)
 [![licence](https://img.shields.io/aur/license/yaourt.svg?style=flat)](https://github.com/royale-proxy/node-cr-proxy/blob/master/LICENSE)
 
 Clash Royale Proxy - Intercepts the traffic between your Clash Royale App and their servers, decrypts the protocol and decodes the messages.
@@ -44,8 +44,5 @@ Don't like NodeJs, prefer python? Get the [python proxy](https://github.com/roya
   
 ## What's the status?
 
-This is a work in progress, but the proxy is pretty much complete. We do need help defining the network messages, so head over to [cr-messages](https://github.com/royale-proxy/cr-messages), clone and contribute!
+This project has been abandoned
 
-## I don't know what I'm doing, can you help me?
-
-Please only use the issue tracker for actual bugs. If you need help, you are more than welcomed to join our [discord server](https://discord.gg/BuUtGPM).
