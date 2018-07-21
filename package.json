@@ -17,12 +17,14 @@
     "node": ">=6.8.0"
   },
   "dependencies": {
-    "blake2": "^1.4.0",
+    "blakejs": "github:dcposch/blakejs",
     "bytebuffer": "^5.0.1",
+    "colors": "^1.1.2",
     "command-line-args": "^4.0.2",
     "command-line-usage": "^4.0.0",
     "console-stamp": "^0.2.5",
     "cr-messages": "royale-proxy/cr-messages",
+    "jsbytes": "^1.0.0",
     "jsome": "^2.3.26",
     "tweetnacl": "^0.14.5"
   }
